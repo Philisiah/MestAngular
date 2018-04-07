@@ -37,8 +37,8 @@
       
       <p>Date of Birth: <b>{{eit.dob | date}}</b></p>
       
-      <p>Full Name: <b>{{eit.firstName + " " + eit.lastName | uppercase}}</b></p>
-      <p>Age: <b>{{eit.dob ? currentYear - (eit.dob | date:"y") : ""}}</b></p>
+      <p>Full Name: <b>{{ eit.fullNames() | uppercase}}</b></p>
+      <p>Age: <b>{{eit.getAge()}}</b></p>
 
     </div>
   </div>
